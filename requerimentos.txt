@@ -1,6 +1,6 @@
+streamlit
 pandas
 matplotlib
-streamlit
 fpdf
 openpyxl
 pyngrok
