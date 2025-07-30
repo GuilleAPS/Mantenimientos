@@ -4,3 +4,4 @@ pandas
 fpdf
 openpyxl
 pyngrok
+scikit-learn
