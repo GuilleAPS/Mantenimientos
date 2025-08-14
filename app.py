@@ -20,7 +20,7 @@ if archivo is not None:
     tipos_mantenimiento = df['Tipo'].unique()
 
     # 🔧 Intervalos personalizados
-    intervalos_km = { "ServicioC": 5000,  "ServicioT": 8000, "Llantas": 50000, "Baterias": 50000 }
+    intervalos_km = { "ServicioC": 5000,  "ServicioT": 8000, "llantas": 50000, "baterias": 50000 }
 
     # 📋 Resumen de mantenimientos futuros
     resumen = []
@@ -39,7 +39,7 @@ if archivo is not None:
 
         ultimo = sub_df.iloc[-1]
         tipo_normalizado = tipo.strip().lower()
-        km_intervalo = intervalos_km.get(tipo_normalizado, 5000)
+        km_intervalo = intervalos_km.get(tipo_normalizado, 3000)
         km_objetivo = ultimo['Km'] + km_intervalo
         fecha_ordinal = (km_objetivo - modelo.intercept_) / coef
 
