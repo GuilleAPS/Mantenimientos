@@ -21,8 +21,8 @@ if archivo is not None:
 
     # 🔧 Intervalos personalizados
     intervalos_km = {
-        "Servicio.C": 5000,
-        "Servicio.T": 8000,
+        "ServicioC": 5000,
+        "ServicioT": 8000,
         "Llantas": 50000,
         "Baterias": 50000
     }
