@@ -20,11 +20,7 @@ if archivo is not None:
     tipos_mantenimiento = df['Tipo'].unique()
 
     # 🔧 Intervalos personalizados
-    intervalos_km = {
-        "ServicioT": 5000,
-        "Llantas": 50000,
-        "Baterias": 50000
-    }
+    intervalos_km = { "ServicioC": 5000,  "ServicioT": 8000, "Llantas": 50000, "Baterias": 50000 }
 
     # 📋 Resumen de mantenimientos futuros
     resumen = []
