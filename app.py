@@ -21,8 +21,7 @@ if archivo is not None:
 
     # 🔧 Intervalos personalizados
     intervalos_km = {
-        "ServicioC": 5000,
-        "ServicioT": 8000,
+        "ServicioT": 5000,
         "Llantas": 50000,
         "Baterias": 50000
     }
@@ -44,7 +43,7 @@ if archivo is not None:
 
         ultimo = sub_df.iloc[-1]
         tipo_normalizado = tipo.strip().lower()
-        km_intervalo = intervalos_km.get(tipo_normalizado, 3000)
+        km_intervalo = intervalos_km.get(tipo_normalizado, 5000)
         km_objetivo = ultimo['Km'] + km_intervalo
         fecha_ordinal = (km_objetivo - modelo.intercept_) / coef
 
