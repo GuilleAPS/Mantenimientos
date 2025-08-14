@@ -21,10 +21,10 @@ if archivo is not None:
 
     # 🔧 Intervalos personalizados
     intervalos_km = {
-        "servicio.C": 5000,
-        "servicio.T": 8000,
-        "llantas": 50000,
-        "baterias": 50000
+        "Servicio.C": 5000,
+        "Servicio.T": 8000,
+        "Llantas": 50000,
+        "Baterias": 50000
     }
 
     # 📋 Resumen de mantenimientos futuros
